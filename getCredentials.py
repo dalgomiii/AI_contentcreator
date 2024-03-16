@@ -3,6 +3,7 @@ import json
 
 """
 Insert app_id and app_secret for your Facebook Page
+Insert instagram_account_id for your Instagram Page
 Create a permanent/long-term token for creds['access_token'] 
 """
 
@@ -14,7 +15,7 @@ def getCreds():
     creds['graph_domain'] = 'https://graph.facebook.com/'
     creds['graph_version'] = 'v19.0'
     creds["endpoint_base"] = creds['graph_domain'] + creds['graph_version'] + '/'
-    creds['instagram_account_id'] = '17841464666256501'
+    creds['instagram_account_id'] = ' '
     return creds
 
 def makeApiCall(url, endpointParams, type):
